@@ -18,11 +18,9 @@ function LunchCheckController($scope, $filter) {
       $scope.lunchCheckResult = "Please enter data first";
       $scope.customStyle.style = {"color":"red"};
     } else if (lunchSplitedList.length > 3) {
-      console.log('More than 3');
       $scope.lunchCheckResult = "Too much!";
       $scope.customStyle.style = {"color":"green"};
     } else {
-      console.log('Less or equal 3');
       $scope.lunchCheckResult = "Enjoy!";
       $scope.customStyle.style = {"color":"green"};
     };
